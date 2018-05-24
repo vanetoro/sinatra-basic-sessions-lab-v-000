@@ -21,8 +21,8 @@ class App < Sinatra::Base
       @session[key] = value
       # binding.pry
     end
-    # @item = item
-    binding.pry
+    @item = @session[:item]
+    # binding.pry
     erb :checkout
   end
 

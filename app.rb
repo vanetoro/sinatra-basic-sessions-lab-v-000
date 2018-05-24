@@ -16,10 +16,11 @@ class App < Sinatra::Base
 
   post '/checkout' do
     @session = session
-    @item = item
+
     params.each do |key, value|
       @session[key] = @session[value]
     end
+    @item = item
     binding.pry
     erb :checkout
   end

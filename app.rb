@@ -18,7 +18,6 @@ class App < Sinatra::Base
     @session = session
     # item_hash =
     params.each do |key, value|
-      binding.pry
       @session[key] = @session[value]
     end
     binding.pry

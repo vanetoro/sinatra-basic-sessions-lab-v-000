@@ -19,10 +19,10 @@ class App < Sinatra::Base
 
     params.each do |key, value|
       @session[key] = value
-      binding.pry
+      # binding.pry
     end
     # @item = item
-    # binding.pry
+    binding.pry
     erb :checkout
   end
 

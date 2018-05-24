@@ -18,7 +18,7 @@ class App < Sinatra::Base
     @session = session
 
     params.each do |key, value|
-      @session[key] = @session[value]
+      @session[key] = value
       binding.pry
     end
     # @item = item

@@ -20,6 +20,7 @@ class App < Sinatra::Base
     params.keys.each do |key|
       @session[key] = @session[value]
     end
+    binding.pry
     erb :checkout
   end
 

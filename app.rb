@@ -16,7 +16,7 @@ class App < Sinatra::Base
 
   post '/checkout' do
     @session = session
-    
+
     params.keys.each do |key|
       @session[key] = @session[value]
     end
